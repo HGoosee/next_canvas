@@ -1,0 +1,55 @@
+import React, { useContext, useState } from 'react';
+import styled from 'styled-components';
+import { CanvasContext } from '../context/CanvasContext';
+import Toolbar from './Toolbar';
+
+//工具栏样式
+const ToolbarContainer1 = styled.div`
+    background-color: #3e3d3d;
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px 0;
+`;
+const ToolButton1=styled.button`
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+    &:hover{
+        background: rgba(255, 255, 255, 0.1);
+    }
+`;
+
+const Toorbar=()=>{
+    return(
+        <ToolbarContainer1>
+            <ToolButton1 title="添加文本">T</ToolButton1>
+            <ToolButton1 title='添加图型'></ToolButton1>
+            <ToolButton1 title='添加图片'></ToolButton1>
+
+            {/* <ToolButtonutton title="矩形">□</ToolButtonutton>
+            <ToolButtonutton title="圆角矩形">▢</ToolButtonutton>
+            <ToolButtonutton title="圆形">○</ToolButtonutton>
+            <ToolButtonutton title="椭圆">⬭</ToolButtonutton>
+            <ToolButtonutton title="三角形">△</ToolButtonutton>
+            <ToolButtonutton title="菱形">◇</ToolButtonutton>
+            <ToolButtonutton title="五边形">⬠</ToolButtonutton>
+            <ToolButtonutton title="六边形">⬡</ToolButtonutton>
+            <ToolButtonutton title="星型">★</ToolButtonutton>
+            <ToolButtonutton title="箭头">→</ToolButtonutton> */}
+        </ToolbarContainer1>
+    )
+}
+export default toolbar;
+//工具栏按钮样式

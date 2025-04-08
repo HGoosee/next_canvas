@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .toolbarcontainer {
+                background-color: #3e3d3d;
+                height: 100%;
+                width: 60px;
+                position: fixed;
+                z-index: 100;
+                display: flex;
+                flex-direction: column;/*从上到下排列子元素*/
+                align-items: center;/*在纵轴（垂直方向的对齐方式）*/
+                padding-top: 10px 0;
+            }
+            .toolbarcontainer>button{
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                color: white;
+                margin: 5px 0;
+                padding: 5px;
+                cursor: pointer;
+                border: none;
+                border-radius: 4px;/*当元素的背景属性发生变化时，会在 0.2 秒内平滑地过渡到新的背景效果。*/
+            }
+            .toolbarcontainer>button:hover{
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="toolbarcontainer">
+            <button title="矩形">T</button>
+            <button title="圆角矩形">▢</button>
+            <button title="圆形">○</button>
+            <button title="椭圆">⬭</button>
+            <button title="三角形">△</button>
+            <button title="菱形">◇</button>
+            <button title="五边形">⬠</button>
+            <button title="六边形">⬡</button>
+            <button title="星型">★</button>
+            <button title="箭头">→</button>
+        </div>
+    </body>
+
+</html>
